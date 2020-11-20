@@ -17,10 +17,37 @@
             font-weight: 700;
             text-align: center;
         }
+        a{
+            color: tan;
+        }
         .main-title{
             text-align: center;
             color: tan;
             font-size: 50px;
+        }
+        .profile-pic{
+            margin-left: 100px;
+            border-radius: 15%;
+            height: 400px;
+            max-width: 40%;
+            padding: 4px;
+            background-color: burlywood;
+        }
+        .pic-text{
+            margin-left: 100px;
+            text-align: left;
+            width: 300px;
+            font-size: 10px;
+        }
+
+        #self-descr{
+            max-width: 40%;
+            margin-right: 100px;
+        }
+        .purpose{
+            font-weight: 700;
+            font-style: italic;
+            color:rgb(179, 130, 66);
         }
     </style>
 </head>
@@ -34,20 +61,26 @@
     </div>
     
 
-    <h1 class="main-title">LUCIANO RODRIGUES LODI</h1><br>
-    <img class="center" Foto src="Luciano Lodi.jpg" width = "400px">
-    <h4 class= "legenda">Essa foto foi tirada em uma das cachoeiras do passeio Boca da Onça, em Bonito-MS. Estivemos lá em Setembro de 2020 e mesmo já tendo ido a Bonito várias 
-        vezes ainda não conhecíamos esse passeio.  </h4>
-        <br>
-        <h2>Quem sou eu</h2>
-        <p>Sou uma pessoa de fácil convivência, buscando encontrar um propósito e um ambiente de trabalho onde posso dar o meu melhor,
-            ter reconhecimento e motivação e ser remunerado. Gosto de desafios e de aprender coisas novas, ter a sensação de que sou
-            capaz é um ótimo sentimento para me motivar a correr atrás dos meus sonhos.
-        </p>
-        <p>
-            Sou brasileiro, nascido em Dourados, Mato Grosso do Sul. Já morei em Cuiabá-MT durante a faculdade, e em Campo Grande-MS
-            onde eu e minha esposa casamos e empreendemos. Hoje moro em Curitiba-PR, cidade que amo e que adotei.
-        </p><br>
+        <h1 class="main-title">LUCIANO RODRIGUES LODI</h1><br>
+
+            <div>
+                <div>
+                    <img class="profile-pic" src="Luciano Lodi.jpg" alt="Foto de Luciano Lodi">
+                    <h4 class= "pic-text">Essa foto foi tirada em uma das cachoeiras do passeio Boca da Onça, em Bonito-MS. Estivemos lá em Setembro de 2020 e mesmo já tendo ido a Bonito várias 
+                        vezes ainda não conhecíamos esse passeio.  </h4>
+                </div>
+            
+                <div id="self-descr">
+                    <h2>Quem sou eu</h2>
+                    <p>Sou uma pessoa de fácil convivência, buscando encontrar um <span class="purpose">propósito</span> e um ambiente de trabalho onde posso dar o meu melhor,
+                        ter reconhecimento e motivação e ser remunerado. Gosto de desafios e de aprender coisas novas, ter a sensação de que sou
+                        capaz é um ótimo sentimento para me motivar a correr atrás dos meus sonhos.
+                    <br><br>
+                        Sou brasileiro, nascido em Dourados, Mato Grosso do Sul. Já morei em Cuiabá-MT durante a faculdade, e em Campo Grande-MS
+                        onde eu e minha esposa casamos e empreendemos. Hoje moro em Curitiba-PR, cidade que amo e que adotei.
+                    </p>
+                </div>
+            </div>
 
             <!-- Lista não ordenada para apresentar algumas características e habilidades-->
             <ul><h2 id= "habilidades"><em>Habilidades:</em></h2>
