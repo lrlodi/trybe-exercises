@@ -9,30 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Tag <style> para estilizar elementos que compõem a página-->
     <style>
-    
+        .bg-image{
+            background-image: url(lucianoLodi.jpg);
+            height: 40%;
+            background-size: 60%;
+            background-repeat: no-repeat;
+        }
         .index-items{
             display: inline;
             color: tan;
             font-size: 16px;
             font-weight: 700;
             text-align: center;
+            text-shadow: 1px 1px rgb(104, 85, 68);
         }
         a{
             color: tan;
         }
         .main-title{
-            text-align: center;
+            text-align: left;
             color: tan;
             font-size: 50px;
+            text-shadow: 2px 2px rgb(104, 85, 68);
+            margin-left: 150px;
         }
-        .profile-pic{
-            margin-left: 100px;
-            border-radius: 15%;
-            height: 400px;
-            max-width: 40%;
-            padding: 4px;
-            background-color: burlywood;
-        }
+
         .pic-text{
             margin-left: 100px;
             text-align: left;
@@ -43,6 +44,7 @@
         #self-descr{
             max-width: 40%;
             margin-right: 100px;
+            back
         }
         .purpose{
             font-weight: 700;
@@ -52,48 +54,59 @@
     </style>
 </head>
 <body>
-    <div class="index-items">
-        <ul>Índice
-            <li class="index-items"><a href="#my-name">Meu nome</a></li>
-            <li class="index-items"><a href="#who-am-i" >Quem sou eu</a></li>
-            <li class="index-items"><a href="#skills" >Habilidades</a></li>
-        </ul>
+    <div class="bg-image">
+        <div class="index-items">
+            <ul>Índice
+                <li class="index-items"><a href="#my-name">Meu nome</a></li>
+                <li class="index-items"><a href="#who-am-i" >Quem sou eu</a></li>
+                <li class="index-items"><a href="#skills" >Habilidades</a></li>
+            </ul>
+        </div>
+        
+    
+            <h1 class="main-title">LUCIANO RODRIGUES LODI</h1><br>
+    
+                <div>                
+                    <div id="self-descr">
+                        <h2>Quem sou eu</h2>
+                        <p>Sou uma pessoa de fácil convivência, buscando encontrar um <span class="purpose">propósito</span> e um ambiente de trabalho onde posso dar o meu melhor,
+                            ter reconhecimento e motivação e ser remunerado. Gosto de desafios e de aprender coisas novas, ter a sensação de que sou
+                            capaz é um ótimo sentimento para me motivar a correr atrás dos meus sonhos.
+                        <br><br>
+                            Sou brasileiro, nascido em Dourados, Mato Grosso do Sul. Já morei em Cuiabá-MT durante a faculdade, e em Campo Grande-MS
+                            onde eu e minha esposa casamos e empreendemos. Hoje moro em Curitiba-PR, cidade que amo e que adotei.
+                        </p>
+                        <p>
+                            Por quê vocês deveriam ouvir minha história?
+                            Tá, eu sou formado em veterinária mas nunca atuei na área;
+                            Tenho experiência com faturamento em hotelaria, mas também não trabalho com isso;
+                            Empreendi, me frustrei e vendi a empresa; e hoje trabalho cozinhando e usando a cozinha para
+                            treinamento de equipes. E aí?
+    
+                            Eu não sou maluco, viu, gente?
+    
+                            Eu só sentia que faltava algo, faltava um propósito. E essa lacuna é o que me move em busca de novos desafios, 
+                            é ela que me coloca em movimento e me dá coragem para mudar quando eu sinto que estou me acomodando. 
+                            Quero ser a melhor versão de mim mesmo e ajudar os outros nesse caminho. 
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Lista não ordenada para apresentar algumas características e habilidades-->
+                <ul><h2 id= "habilidades"><em>Habilidades:</em></h2>
+                    <li>Curiosidade</li>
+                    <li>Dedicação</li>
+                    <li>Compromisso</li>
+                    <li> <strong>Honestidade</strong></li>
+                    <li>Facilidade com idiomas</li>
+                    <li>Cozinho muito bem</li>
+                </ul>
+            
+            <a href="#Foto">Veja minha foto!</a><br>
+            <a href="https://lrlodi.wixsite.com/melhorversao" target="_blank">Leia meu blog - Melhor Versão</a>
+
     </div>
     
-
-        <h1 class="main-title">LUCIANO RODRIGUES LODI</h1><br>
-
-            <div>
-                <div>
-                    <img class="profile-pic" src="Luciano Lodi.jpg" alt="Foto de Luciano Lodi">
-                    <h4 class= "pic-text">Essa foto foi tirada em uma das cachoeiras do passeio Boca da Onça, em Bonito-MS. Estivemos lá em Setembro de 2020 e mesmo já tendo ido a Bonito várias 
-                        vezes ainda não conhecíamos esse passeio.  </h4>
-                </div>
-            
-                <div id="self-descr">
-                    <h2>Quem sou eu</h2>
-                    <p>Sou uma pessoa de fácil convivência, buscando encontrar um <span class="purpose">propósito</span> e um ambiente de trabalho onde posso dar o meu melhor,
-                        ter reconhecimento e motivação e ser remunerado. Gosto de desafios e de aprender coisas novas, ter a sensação de que sou
-                        capaz é um ótimo sentimento para me motivar a correr atrás dos meus sonhos.
-                    <br><br>
-                        Sou brasileiro, nascido em Dourados, Mato Grosso do Sul. Já morei em Cuiabá-MT durante a faculdade, e em Campo Grande-MS
-                        onde eu e minha esposa casamos e empreendemos. Hoje moro em Curitiba-PR, cidade que amo e que adotei.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Lista não ordenada para apresentar algumas características e habilidades-->
-            <ul><h2 id= "habilidades"><em>Habilidades:</em></h2>
-                <li>Curiosidade</li>
-                <li>Dedicação</li>
-                <li>Compromisso</li>
-                <li> <strong>Honestidade</strong></li>
-                <li>Facilidade com idiomas</li>
-                <li>Cozinho muito bem</li>
-            </ul>
-        
-        <a href="#Foto">Veja minha foto!</a><br>
-        <a href="https://lrlodi.wixsite.com/melhorversao" target="_blank">Leia meu blog - Melhor Versão</a>
 
     
     </body>
