@@ -1,0 +1,13 @@
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27, 200];
+let isBigger = 0;
+let maxNumber= 0;
+
+for (let counter = 0 ; counter < numbers.length ; counter += 1 ) {
+    if (numbers[counter] > counter) {
+        isBigger = numbers[counter];
+    }
+        if(isBigger > maxNumber) {
+            maxNumber = isBigger;
+        }
+}
+console.log('O maior elemento do array é: ' + maxNumber)
