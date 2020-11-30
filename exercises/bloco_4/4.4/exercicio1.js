@@ -4,10 +4,15 @@ let info = {
     nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
   };
 
-  console.log('Bem vinda, ' + info.personagem + '.')
+let info1 = {
+    personagem: 'Tio Patinhas',
+    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim',
+}
 
-  info['recorrente'] = 'sim';
+  info['recorrente'] = 'Sim';
 
-  for (keys in info){
-      console.log(info[keys])
+  for (keys in info, info1){
+      console.log(info[keys] + ' e ' + info1[keys])
   }
