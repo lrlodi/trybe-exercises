@@ -9,5 +9,5 @@ let info = {
   info['recorrente'] = 'sim';
 
   for (keys in info){
-      console.log(keys)
+      console.log(info[keys])
   }
