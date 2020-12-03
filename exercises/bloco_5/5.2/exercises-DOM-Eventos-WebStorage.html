@@ -72,6 +72,11 @@
         secondDivContent.className = "center-content";
         secondDiv.appendChild(secondDivContent);
 
+        let secondDivP = document.querySelector('div .center-content');
+        let secondDivParagraph = document.createElement('p');
+        secondDivParagraph.innerText = 'Esse elemento <p> é filho da secondDiv';
+        secondDivP.appendChild(secondDivParagraph);
+
     </script>
   </body>
 </html>
