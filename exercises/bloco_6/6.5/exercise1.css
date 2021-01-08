@@ -30,3 +30,45 @@ figure {
         padding: 20px;
     }
 }
+
+@media screen and (min-width: 569px) {
+
+    body {
+        background-color: beige;
+        font-size: 1.3rem;
+        margin: 30px;
+    }
+
+    body section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    section figure {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 40%;
+    }
+
+    section h2 {
+        align-self: center;
+        padding: 10px;
+        width: 40%;
+    }
+    
+    figure figcaption {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    section div {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        justify-content: center;
+    }
+
+}
