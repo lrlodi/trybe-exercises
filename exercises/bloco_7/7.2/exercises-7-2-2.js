@@ -114,4 +114,6 @@ const addMorningShift = (objectToChange, newKey, newKeyValue) => {
 
 const showKeys = (object) => Object.keys(object);
 
-console.log(showKeys(lesson1));
+const showObjectSize = (object) => (Object.keys(object)).length;
+
+console.log(showObjectSize(lesson1));
