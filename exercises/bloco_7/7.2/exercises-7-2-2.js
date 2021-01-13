@@ -116,4 +116,4 @@ const showKeys = (object) => Object.keys(object);
 
 const showObjectSize = (object) => (Object.keys(object)).length;
 
-console.log(showObjectSize(lesson1));
+const listValues = (object) => Object.values(object);
