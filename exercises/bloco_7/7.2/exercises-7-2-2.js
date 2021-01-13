@@ -112,5 +112,6 @@ const addMorningShift = (objectToChange, newKey, newKeyValue) => {
   objectToChange = Object.assign(objectToChange, newShift);
 }
 
-addMorningShift(lesson2, 'turno', 'manhã');
-console.log(lesson2);
+const showKeys = (object) => Object.keys(object);
+
+console.log(showKeys(lesson1));
