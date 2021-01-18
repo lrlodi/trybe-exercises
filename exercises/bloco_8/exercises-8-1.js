@@ -63,10 +63,21 @@ const books = [
   },
 ];
 
+
+// // Uma forma de resolver este exercício:
 function authorBornIn1947() {
   // escreva aqui o seu código
   const name = books.find(value => value.author.birthYear === 1947).author.name;
   return name;
 };
 
-assert.strictEqual(authorBornIn1947(books), 'Stephen King');
+// // Outra forma de resolver esse exercício:
+function authorBornIn1947() {
+  // escreva aqui o seu código
+  return books.find(value => value.author.birthYear === 1947).author.name;
+};
+
+// Ainda outra forma de resolver esse exercício, agora transformando tudo em arro function:
+const authorBornIn1947 = () => books.find(value => value.author.birthYear === 1947).author.name;
+
+assert.strictEqual(authorBornIn1947(), 'Stephen King');

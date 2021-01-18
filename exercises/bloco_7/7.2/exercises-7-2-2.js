@@ -102,18 +102,16 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addMorningShift = (objectToChange, newKey, newKeyValue) => {
-  const keyName = newKey;
-  const keyValue = newKeyValue;  
-  const newShift = {
-    keyName: keyValue,
-  };
-
-  objectToChange = Object.assign(objectToChange, newShift);
+const addMorningShift = (objectToChange, newKey, newKeyValue) => {//Função para adicionar o turno da manhã à uma matéria
+  objectToChange[newKey] = newKeyValue;
 }
 
-const showKeys = (object) => Object.keys(object);
+const showKeys = (object) => Object.keys(object); //função para mostrar as chaves de um objeto
 
-const showObjectSize = (object) => (Object.keys(object)).length;
+const showObjectSize = (object) => (Object.keys(object)).length; // função para mostrar o tamanho de um objeto
 
-const listValues = (object) => Object.values(object);
+const listValues = (object) => Object.values(object); // função para mostrar os valores de um objeto
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3}); // cria um novo objeto que reúne todas as matérias anteriores
+
+const totalStudents = (object) => 
