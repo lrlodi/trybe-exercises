@@ -4,11 +4,12 @@ function whichIsTheBiggest (array){
     for (let counter = 0 ; counter < array.length ; counter += 1 ) {
         if (array[counter] > counter) {
             biggestNum = array[counter];
+            console.log(biggestNum)
         }
     }
 
     for (let counter = 0 ; counter < array.length ; counter += 1){
-        if(array[counter] == biggestNum)
+        if(array[counter] === biggestNum)
         console.log(counter)
     }
 }

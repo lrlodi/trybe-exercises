@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let text = document.querySelector('body');
+        let textTitle = document.createElement('h1');
+        textTitle.innerText = 'Exercício 5.2 - JavaScript DOM';
+        text.appendChild(textTitle);
+
+        let divBody = document.querySelector('body');
+        let divContent = document.createElement('div');
+        divContent.className = "main-content";
+        divBody.appendChild(divContent);
+
+        let secondDiv = document.querySelector('div');
+        let secondDivContent = document.createElement('div');
+        secondDivContent.className = "center-content";
+        secondDiv.appendChild(secondDivContent);
+
+        let secondDivP = document.querySelector('div .center-content');
+        let secondDivParagraph = document.createElement('p');
+        secondDivParagraph.innerText = 'Esse elemento <p> é filho da secondDiv';
+        secondDivP.appendChild(secondDivParagraph);
+
+        let leftDiv = document.querySelector('.main-content');
+        let leftDivContent = document.createElement('div');
+        leftDivContent.className = "left-content";
+        leftDiv.appendChild(leftDivContent);
+
+        let rightDiv = document.querySelector('.main-content');
+        let rightDivContent = document.createElement('div');
+        rightDivContent.className = "right-content";
+        rightDiv.appendChild(rightDivContent);
+
+        let image = document.querySelector('.left-content');
+        let imageTag = document.createElement('img');
+        imageTag.src = "https://picsum.photos/200";
+        imageTag.className = "small-image";
+        image.appendChild(imageTag);
+
+        let list = document.querySelec
+
+    </script>
+  </body>
+</html>
