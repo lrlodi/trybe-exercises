@@ -1,5 +1,3 @@
-// Movement animation
-
 const card = document.querySelector('.card');
 const container = document.querySelector('.container');
 const title = document.querySelector('.title');
@@ -7,26 +5,13 @@ let shipCard = document.querySelector('.ship-card img');
 const circle = document.querySelector('.circle');
 const models = document.querySelector('.models');
 const descri = document.querySelector('h3');
-// moving animation
 
-// container.addEventListener("mousemove", e => {
-//   let xAxis = (window.innerWidth / 2 - e.pageX)/ 15;
-//   let yAxis = (window.innerHeight / 2 - e.pageY)/ 15;
-//   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
-// });
 
 function movingAnimation(e) {
   let xAxis = (window.innerWidth / 2 - e.pageX)/ 15;
   let yAxis = (window.innerHeight / 2 - e.pageY)/ 15;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 }
-// // animate in
-// container.addEventListener("mouseenter", e => {
-//   card.style.transition = 'none';
-//   title.style.transform = "translateZ(100px)";
-//   descri.style.transform = "translateZ(100px)";
-//   shipCard.style.transform = "translateZ(200px)";
-// })
 
 function animateIn() {
   card.style.transition = 'none';
@@ -34,15 +19,6 @@ function animateIn() {
   descri.style.transform = "translateZ(100px)";
   shipCard.style.transform = "translateZ(200px)";
 }
-
-// // animate out
-// container.addEventListener("mouseleave", e => {
-//   card.style.transition = 'all 0.5s ease';
-//   card.style.transform = `rotateY(0) rotateX(0)`;
-//   title.style.transform = "translateZ(0)";
-//   shipCard.style.transform = "translateZ(0)";
-//   descri.style.transform = "translateZ(0)";
-// })
 
 function animateOut() {
   card.style.transition = 'all 0.5s ease';

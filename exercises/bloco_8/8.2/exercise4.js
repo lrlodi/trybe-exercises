@@ -95,4 +95,14 @@ const filtered = books.filter((book) => {
   return book.releaseYear < 1961;
 });
 
+function authorsBornedInSameYear() {
+  books.forEach(book1 => {
+    return books.some(book2 => {
+      book1.author.birthYear === book2.author.birthYear;
+    })
+})
+}
+
+authorsBornedInSameYear();
+
 assert.deepStrictEqual(oldBooks(), expectedResult);
